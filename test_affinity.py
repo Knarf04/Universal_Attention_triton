@@ -2,9 +2,9 @@ from tqdm import tqdm
 
 from Universal_Attention.utils import *
 from Universal_Attention.triton.affinity import _gen_affinity_scores_torch, _gen_affinity_scores_torch_fused
-from Universal_Attention.triton.affinity import _gen_affinity_scores as _gen_affinity_scores_triton
+from Universal_Attention.triton.affinity_new import _gen_affinity_scores as _gen_affinity_scores_triton
 # from Universal_Attention.triton.affinity_split import _gen_affinity_scores as _gen_affinity_scores_triton
-from Universal_Attention.triton.affinity import get_optimal_configs
+from Universal_Attention.triton.affinity_new import get_optimal_configs
 
 if __name__ == "__main__":
     torch.backends.cuda.matmul.allow_tf32 = True

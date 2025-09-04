@@ -14,7 +14,7 @@ configs = [
 
 # Optimal config for the fwd path, tuned on A100
 fwd_A100 = [triton.Config({'BLOCK_I': 128, 'BLOCK_J': 128, 'BLOCK_D': 32}, num_stages=2, num_warps=8)]
-bwd_A100 = [triton.Config({'BLOCK_I': 16, 'BLOCK_J': 16, 'BLOCK_D': 128}, num_stages=2, num_warps=8)]
+bwd_A100 = [triton.Config({'BLOCK_I': 32, 'BLOCK_J': 32, 'BLOCK_D': 128}, num_stages=2, num_warps=8)]
 
 '''
 ######################################
