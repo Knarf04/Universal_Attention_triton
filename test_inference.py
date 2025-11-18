@@ -66,4 +66,4 @@ if __name__ == "__main__":
             torch.cuda.synchronize()
             prof.step()  # mark iteration
 
-    prof.export_chrome_trace("/gpfs/hshen/traces/ua_inference_torch.json")
+    prof.export_chrome_trace("/gpfs/hshen/profile_traces/ua_inference_torch.json")
