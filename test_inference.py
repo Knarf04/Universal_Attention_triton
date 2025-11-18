@@ -41,5 +41,5 @@ if __name__ == "__main__":
             _, _ = ua_inference_torch(q, k_, v_, static_src, static_dest, k, v, r, a, thresh=math.log(1e-4))
 
     torch.cuda.synchronize()
-    prof.export_chrome_trace(f'ua_inference_torch.json')
+    prof.export_chrome_trace(f'/gpfs/hshen/traces/ua_inference_torch.json')
 
